@@ -1,6 +1,6 @@
 # The Lounge
 
-The Lounge is a modern web IRC client designed for self-hosting
+The Lounge is a modern web IRC client designed for self-hosting.
 
 thelounge.chat
 
