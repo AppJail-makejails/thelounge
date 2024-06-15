@@ -1,0 +1,32 @@
+INCLUDE options/options.makejail
+
+ARG thelounge_tag=13.3
+
+FROM --entrypoint gh+AppJail-makejails/thelounge thelounge:${thelounge_tag}
+
+STOP
+
+STAGE start
+
+WORKDIR /app
+
+RUN daemon \
+	-r \
+	-t "Modern, responsive, cross-platform, self-hosted web IRC client" \
+	-u thelounge \
+	-P /app/.master.pid \
+	-p /app/.pid \
+	-o /app/thelounge.log \
+		thelounge start
+
+STAGE custom:thelounge_status
+
+CMD if [ -f "/app/.pid" ]; then \
+        top -ap `head -1 /app/.pid`; \
+    fi
+
+STAGE custom:thelounge_log
+
+CMD if [ -f "/app/thelounge.log" ]; then \
+        less -R /app/thelounge.log; \
+    fi
