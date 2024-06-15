@@ -1,0 +1,16 @@
+tags: 13.3
+13.3.arch: amd64
+13.3.name: "thelounge"
+13.3.timestamp.amd64: 1718471535
+13.3.sum.amd64: 29176b1459343003603659c956584f9259b20c576e227c9708c792396ee47d1c
+13.3.size.amd64: 134901539
+13.3.source.amd64: "http://appjail.hpc.at/thelounge/13.3-amd64-image.appjail"
+13.3.source.amd64+: "https://images.all101bsd.download/thelounge/13.3-amd64-image.appjail"
+tags+: 14.1
+14.1.arch: amd64
+14.1.name: "thelounge"
+14.1.timestamp.amd64: 1718471696
+14.1.sum.amd64: 74d7a18cf5add7dd59acbd057b3afc7118301eb86081a0110eb76e20ca737fb9
+14.1.size.amd64: 134528549
+14.1.source.amd64: "http://appjail.hpc.at/thelounge/14.1-amd64-image.appjail"
+14.1.source.amd64+: "https://images.all101bsd.download/thelounge/14.1-amd64-image.appjail"
