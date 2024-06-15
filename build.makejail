@@ -1,0 +1,10 @@
+INCLUDE options/options.makejail
+INCLUDE options/volumes.makejail
+
+PKG yarn python gmake
+
+CMD yarn global add thelounge
+
+CMD pw useradd -n thelounge -c "Modern, responsive, cross-platform, self-hosted web IRC client" -d /app -s /bin/sh
+CMD mkdir -p /app
+CMD chown thelounge:thelounge /app

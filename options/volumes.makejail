@@ -1,0 +1,1 @@
+OPTION volume=thelounge-db mountpoint:/app owner:1001 group:1001
