@@ -25,6 +25,7 @@ appjail makejail \
     -o nat \
     -o expose=9000 \
     -o fstab="$PWD/.volumes/db thelounge-db <volumefs>"
+appjail start thelounge
 ```
 
 ### Arguments (stage: build):
