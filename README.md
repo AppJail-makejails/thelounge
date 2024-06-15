@@ -28,6 +28,12 @@ appjail makejail \
 appjail start thelounge
 ```
 
+### Creating a new user
+
+```sh
+appjail cmd jexec thelounge -U thelounge thelounge add MyUser
+```
+
 ### Arguments (stage: build):
 
 * `thelounge_tag` (default: `13.3`): see [#tags](#tags).
