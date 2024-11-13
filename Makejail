@@ -11,10 +11,8 @@ STAGE start
 WORKDIR /app
 
 RUN daemon \
-	-r \
 	-t "Modern, responsive, cross-platform, self-hosted web IRC client" \
 	-u thelounge \
-	-P /app/.master.pid \
 	-p /app/.pid \
 	-o /app/thelounge.log \
 		thelounge start
