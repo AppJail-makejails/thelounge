@@ -1,7 +1,7 @@
 INCLUDE options/options.makejail
 
 ARG thelounge_ajspec=gh+AppJail-makejails/thelounge
-ARG thelounge_tag=13.5
+ARG thelounge_tag=14.3
 
 FROM --entrypoint "${thelounge_ajspec}" thelounge:${thelounge_tag}
 

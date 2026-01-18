@@ -36,7 +36,7 @@ appjail cmd jexec thelounge -U thelounge thelounge add MyUser
 
 ### Arguments (stage: build):
 
-* `thelounge_tag` (default: `13.5`): see [#tags](#tags).
+* `thelounge_tag` (default: `14.3`): see [#tags](#tags).
 * `thelounge_ajspec` (default: `gh+AppJail-makejails/thelounge`): Entry point where the `appjail-ajspec(5)` file is located.
 
 ### Check current status
@@ -65,5 +65,5 @@ appjail run -s thelounge_log thelounge
 
 | Tag    | Arch    | Version        | Type   |
 | ------ | ------- | -------------- | ------ |
-| `13.5` | `amd64` | `13.5-RELEASE` | `thin` |
 | `14.3` | `amd64` | `14.3-RELEASE` | `thin` |
+| `15` | `amd64` | `15` | `thin` |
